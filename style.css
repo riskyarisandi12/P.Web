@@ -1,0 +1,227 @@
+/* Membuat body menutupi seluruh tinggi layar */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Layout dasar: kolom vertikal */
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+    background-color: #e0f7fa; /* Warna latar belakang biru muda */
+    color: #333;
+    
+  }
+  
+  /* Header */
+  header {
+    background-color: #007bb5; /* Warna biru tua untuk header */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header h1 {
+    margin: 0;
+    font-size: 28px;
+  }
+  
+  /* Container utama halaman */
+  .container {
+    flex: 1;
+    text-align: center;
+    padding: 30px 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 20px auto;
+    flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+  
+  /* Tombol-tombol ditata secara vertikal */
+  .button-container {
+    display: flex;
+    flex-direction: column; /* Mengubah tombol menjadi vertikal */
+    gap: 12px;
+    justify-items: center;
+    margin-top: 20px;
+    padding: 0 10px;
+  }
+  
+  /* Gaya tombol dengan efek lebih menarik */
+  .btn {
+    display: inline-block;
+    padding: 14px 28px; /* Menambahkan padding lebih besar untuk tombol */
+    background: linear-gradient(45deg, #007bb5, #00bcd4); /* Menambahkan gradien biru */
+    color: white;
+    border-radius: 50px; /* Ujung tombol berbentuk oval */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Memberikan bayangan halus pada tombol */
+    transition: transform 0.3s ease, background 0.3s ease; /* Efek transisi pada tombol */
+  }
+  
+  .btn:hover {
+    background: linear-gradient(45deg, #00bcd4, #007bb5); /* Efek hover dengan perubahan gradien */
+    transform: translateY(-4px); /* Tombol sedikit terangkat saat hover */
+  }
+  
+  .btn:active {
+    background: linear-gradient(45deg, #007bb5, #00bcd4); /* Efek active dengan gradien terbalik */
+    transform: translateY(2px); /* Tombol sedikit turun saat diklik */
+  }
+  
+  /* Footer tetap di bawah */
+  footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #007bb5; /* Warna biru tua untuk footer */
+    color: white;
+    margin-top: auto;
+  }
+
+  /* Profile Card Styling */
+.profile-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .profile-card:hover {
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2); /* Efek hover dengan bayangan lebih besar */
+  }
+  
+  .profile-image img {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #00bcd4;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .profile-info h2 {
+    font-size: 26px;
+    font-weight: bold;
+    color: #007bb5;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .info-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-item .label {
+    font-weight: bold;
+    color: #007bb5;
+  }
+  
+  .info-item .value {
+    color: #555;
+  }
+  
+  .btn-back {
+    margin-top: 30px;
+    padding: 14px 35px;
+    background-color: #007bb5;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-back:hover {
+    background-color: #005f82;
+    transform: translateY(-4px);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #007bb5;
+    color: white;
+    margin-top: auto;
+  }
+  
+  
+  /* Section styling untuk tugas */
+.section {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .section h2 {
+    font-size: 24px;
+    color: #007bb5;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .section p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .btn-back {
+    margin-top: 30px;
+    padding: 14px 35px;
+    background-color: #007bb5;
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 18px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .btn-back:hover {
+    background-color: #005f82;
+    transform: translateY(-4px);
+  }
+  
+  footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #007bb5;
+    color: white;
+    margin-top: auto;
+  }
+  
